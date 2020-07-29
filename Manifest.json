@@ -1,0 +1,45 @@
+{
+"manifest_version": 2,
+"name": "Tab Lock",
+"short_name": "Tab Lock",
+"description": "Prevent tabs from navigating out from underneath you!",
+"version": "0.1",
+"icons": {
+  "16":  "/images/lock16.png",
+  "24":  "/images/lock24.png",
+  "32":  "/images/lock32.png",
+  "48":  "/images/lock48.png",
+  "64":  "/images/lock64.png",
+  "128": "/images/icon128.png"
+  },
+"background": {
+  "scripts": ["/js/background.js"],
+  "persistent": true
+  },
+"browser_action": {
+  "default_icon": {
+    "16":  "/images/unlock16.png",
+    "24":  "/images/unlock24.png",
+    "32":  "/images/unlock32.png",
+    "48":  "/images/unlock48.png",
+    "64":  "/images/unlock64.png"
+    },
+  "default_title": "Tab Lock"
+  },
+"options_ui": {
+  "page": "/html/options.html",
+  "open_in_tab": false
+},
+"incognito": "spanning",
+"permissions": [
+  "storage",
+  "unlimitedStorage",
+  "tabs",
+  "activeTab",
+  "webNavigation",
+  "webRequest",
+  "webRequestBlocking",
+  "contextMenus",
+  "<all_urls>"
+  ]
+}
