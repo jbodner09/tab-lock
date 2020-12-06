@@ -3,7 +3,7 @@
 "name": "Tab Lock",
 "short_name": "Tab Lock",
 "description": "Prevent tabs from navigating out from underneath you!",
-"version": "0.1",
+"version": "0.2",
 "icons": {
   "16":  "/images/lock16.png",
   "24":  "/images/lock24.png",
